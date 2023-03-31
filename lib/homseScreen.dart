@@ -12,10 +12,11 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  CounterController counterController = CounterController();
+  CounterController counterController = Get.put(CounterController());
 
   @override
   Widget build(BuildContext context) {
+    print("Rebuild");
     return Scaffold(
       body: Center(
           child: Obx(
