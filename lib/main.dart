@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_mvvm/homseScreen.dart';
+import 'package:flutter_getx_mvvm/view/splash_screen.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 import 'languages.dart';
@@ -19,10 +20,8 @@ class MyApp extends StatelessWidget {
       locale: Locale('en', 'US'),
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomeScreen(),
+      theme: ThemeData.dark(),
+      home: const SplashScreen(),
     );
   }
 }
